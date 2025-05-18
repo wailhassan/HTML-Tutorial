@@ -1,0 +1,81 @@
+<!--
+By Wail Hassan
+GitHub acc: https://github.com/wailhassan
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="This page contains all the things about Create Tables">
+    <link rel="icon" href="img/html5_icon.png">
+    <link rel="stylesheet" href="main.css">
+    <title>Create Tables</title>
+</head>
+
+<body>
+    <br>
+    <table>
+        <caption>
+            My Daily Schedule
+        </caption>
+
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th id="time" scope="col">Time</th>
+                <th scope="col">Activity</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th id="morning" scope="row">Morning</th>
+                <td headers="time morning">
+                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                </td>
+                <td>
+                    Write Code
+                </td>
+            </tr>
+            <tr>
+                <th id="break" scope="row">Break</th>
+                <td>
+                    <time datetime="12:00">12am</time>-<time datetime="12:00">12am</time>
+                </td>
+                <td>
+                    Eat Lunch
+                </td>
+            </tr>
+            <tr>
+                <th id="afternoon" scope="row">Afternoon</th>
+                <td>
+                    <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                </td>
+                <td>
+                    Study for Other Courses
+                </td>
+            </tr>
+            <tr>
+                <th id="evening" scope="row">Evening</th>
+
+                <td rowspan="3">All Other Times</td>
+                <td>Free Time</td>
+                <!--<td colspan="2">Free Time</td>-->
+            </tr>
+            <tr>
+                <th id="night" scope="row">Night</th>
+                <td>sleep</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> And that's what i do every day, 5 days a week. Just eat, sleep, code.. and recharge!
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
